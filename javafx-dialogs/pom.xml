@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>javafx-dialogs</groupId>
+	<artifactId>javafx-dialogs</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<build>
+		<testSourceDirectory>test</testSourceDirectory>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>javafx</artifactId>
+			<version>2.0</version>
+			<!-- <systemPath>C:\Program Files\Java\jdk1.7.0_06\jre\lib\jfxrt.jar</systemPath> -->
+			<systemPath>${env.JAVA_HOME}/jre/lib/jfxrt.jar</systemPath>
+			<scope>system</scope>
+		</dependency>
+	</dependencies>
+</project>
